@@ -1,0 +1,245 @@
+.speakCon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 45rem;
+  padding: auto;
+}
+
+.speakTitle h1 {
+  color: var(--Text-Text-Primary, #161b23);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 2.4rem */
+  letter-spacing: -0.04rem;
+}
+
+.speakSuccesMess {
+  color: #5d6676;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.6875rem */
+  letter-spacing: -0.0225rem;
+  text-align: center !important;
+}
+
+.speakBtnScss {
+  display: flex;
+  width: 30%;
+  padding: 0.6rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: var(--Radius-sm, 0.25rem);
+  background: #5bc5c9;
+  color: var(--Brand-Primary, #1d1e4a);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.125rem */
+  letter-spacing: -0.015rem;
+  float: right;
+}
+
+.speakSuccesMess {
+  color: #5d6676;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.6875rem */
+  letter-spacing: -0.0225rem;
+  text-align: center;
+}
+
+.backSeakBtn button {
+  display: flex;
+  padding: 0.34375rem var(--spacing-1, 0.5rem) 0.34375rem var(--spacing-2, 1rem);
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: var(--Radius-xl, 2rem);
+  color: var(--Brand-Quartenary, #b9b9c7);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}
+
+.backSeakBtn button:hover {
+  color: #252d3c;
+  border-radius: var(--Radius-xl, 2rem);
+  background: rgba(156, 168, 188, 0.242);
+  display: flex;
+  padding: 0.34375rem var(--spacing-2, 1rem) 0.34375rem var(--spacing-1, 0.5rem);
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.chsFile[type]::file-selector-button {
+  padding: 0.1875rem 0.5rem;
+  align-items: center;
+  border-radius: var(--Radius-sm, 0.25rem);
+  border: 1px solid var(--Borders-Stroke, #c0c4ca);
+  background: var(--Brand-Quartenary, #b9b9c7);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.0175rem;
+}
+
+.chsFile[type="file"] {
+  color: #161b23;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+  font-style: normal;
+  letter-spacing: -0.0175rem;
+}
+
+.speakBtn {
+  display: flex;
+  width: 8.625rem;
+  padding: 0.6rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: var(--Radius-sm, 0.25rem);
+  background: #5bc5c9;
+  color: var(--Brand-Primary, #1d1e4a);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.125rem */
+  letter-spacing: -0.015rem;
+  float: right;
+}
+
+.speakIn {
+  display: flex;
+  height: 3.3125rem;
+  width: 100%;
+  padding: var(--spacing-2, 1rem);
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  flex: auto;
+  border: none;
+  border-bottom: 0.6px solid var(--Borders-Stroke, #c0c4ca);
+  color: #252d3c;
+}
+
+.speakIn::placeholder {
+  color: var(--Text-Text-Tertiary, #5d6676);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}
+
+.speakTitle h1 span {
+  color: #f7b021;
+}
+
+.speakTitle p {
+  display: flex;
+  color: #161b23;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: -0.02rem;
+  width: 100%;
+}
+
+.speakLabel p {
+  color: #161b23;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: -0.02rem;
+}
+
+.speakLabel div span {
+  color: #e8342e;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.speakIn[type] {
+  color: var(--Text-Text-Tertiary, #161b23);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}
+
+.headshot h3 {
+  color: var(--Text-Text-Primary, #161b23);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}
+
+.headshot p {
+  color: var(--Text-Text-Primary, #161b23);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}
+
+.headshotTag p {
+  color: var(--Text-Text-Primary, #161b23);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}
+
+.speakErrorInput {
+  border-bottom: 1px solid #ff9d83 !important;
+}
+
+.speakErrorText {
+  color: #ff3932;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.error {
+  color: #ff3932;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+@media (max-width: 568px) {
+  .speakCon {
+    width: 23.4375rem;
+  }
+  .speakBtn {
+    width: 100%;
+  }
+  .speakLabel div span {
+    margin-top: 1rem;
+  }
+  .speakBtnScss {
+    width: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+.partners {
+  background-color: #bbbdc0;
+}
+.partners-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.partners-title-text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.btn-nlo-partner {
+  background-color: #59c1c6;
+  color: #1d1e4a;
+  font-weight: 600;
+  padding: 10px 50px;
+  font-size: 12px;
+}
+.join-now {
+  background-image: url("../../../public/masses.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.partners-carousel {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.partner-icon {
+  font-size: 3rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-icon:hover {
+  background-color: #f7b021;
+  color: #fff;
+}
+
+.partnersImages {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.partnersImages img {
+  animation: scrollImage 50s infinite linear;
+}
+
+@keyframes scrollImage {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .partners-title {
+    font-size: 2rem;
+  }
+}

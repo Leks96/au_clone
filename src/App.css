@@ -1,0 +1,34 @@
+.text-nlco-secondary {
+  color: #f7b021 !important;
+}
+.text-nlco-primary {
+  color: #1d1e4a !important;
+}
+.text-nlco-info {
+  color: #5ac5c9 !important;
+}
+.rotate-90 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input.PhoneInputInput {
+  color: var(--Text-Text-Tertiary, #161b23) !important;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.0175rem;
+  border: none;
+}
+
+input.PhoneInputInput::placeholder {
+  color: var(--Text-Text-Tertiary, #5d6676);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: -0.0175rem;
+}

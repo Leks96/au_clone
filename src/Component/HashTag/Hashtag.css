@@ -1,0 +1,16 @@
+.hashtag {
+  background-color: #151535;
+}
+.tag {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .hashtag .tag {
+    font-size: 23px !important;
+  }
+  .hashtag .dot {
+    font-size: 30px;
+  }
+}

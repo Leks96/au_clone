@@ -1,0 +1,127 @@
+.why-attend1 {
+  background-color: #1d1e4a;
+  background-image: url("../../../public//angle.png");
+  background-repeat: no-repeat;
+  background-position: -50px -120px;
+}
+.why-attend-card1 {
+  border: none;
+  border-radius: 20px;
+  padding: 60px 10px;
+}
+.why-attend-card1 > .card-body1 {
+  border: none;
+}
+
+.card-title-icon1 {
+  font-weight: 800;
+  font-size: 44px;
+  color: #1d1e4a;
+}
+.card-title-text1 {
+  font-weight: 800;
+  color: #1d1e4a;
+}
+
+.why-attend-card1:hover {
+  background-color: orange !important;
+}
+
+.why-attend {
+  background-color: #1d1e4a;
+  background-image: url("../../../public//angle.png");
+  background-repeat: no-repeat;
+  background-position: -50px -120px;
+}
+.why-attend-card {
+  border: none;
+  border-radius: 20px;
+  padding: 60px 10px;
+}
+.why-attend-card > .card-body {
+  border: none;
+}
+.why-attend-card > .card-body > .card-text,
+.why-attend-card1 > .card-body > .card-text,
+.why-attend-card2 > .card-body > .card-text {
+  color: #151535;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* {
+  color: #151535;
+  font-size: 12px;
+}
+
+ {
+  color: #151535;
+  font-size: 12px;
+} */
+
+.card-title-icon {
+  font-weight: 800;
+  font-size: 44px;
+  color: #1d1e4a;
+}
+.card-title-text {
+  font-weight: 800;
+  color: #1d1e4a;
+}
+
+.why-attend2 {
+  background-color: #1d1e4a;
+  background-image: url("../../../public//angle.png");
+  background-repeat: no-repeat;
+  background-position: -50px -120px;
+}
+.why-attend-card2 {
+  border: none;
+  border-radius: 20px;
+  padding: 60px 10px;
+}
+.why-attend-card2 > .card-body2 {
+  border: none;
+}
+.why-attend-card2 > .card-body2 > .card-text2 {
+  color: #151535;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.why-attend-card1 > .card-body1 > .card-text1 {
+  color: #151535;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-title-icon2 {
+  font-weight: 800;
+  font-size: 44px;
+  color: #1d1e4a;
+}
+.card-title-text2 {
+  font-weight: 800;
+  color: #1d1e4a;
+}
+
+.why-attend-card2:hover {
+  background-color: #5ac5c9 !important;
+}
+
+.why-attend-card:hover {
+  background-color: #bbbdc0 !important;
+}
+
+@media (max-width: 767px) {
+  .why-attend-card1 {
+    background-color: orange !important;
+  }
+  .why-attend-card2 {
+    background-color: #5ac5c9 !important;
+  }
+
+  .why-attend-card {
+    background-color: #bbbdc0 !important;
+  }
+}

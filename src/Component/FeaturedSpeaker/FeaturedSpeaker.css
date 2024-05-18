@@ -1,0 +1,138 @@
+.featured-speaker {
+  background-color: #ebecee;
+}
+.featured-speaker-card {
+  background-color: transparent;
+  border: none;
+}
+.card-img-top {
+  border-radius: 15px;
+}
+.featured-speaker-card > .card-body {
+  border-bottom: none;
+}
+.nlco-fct {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: -20px;
+}
+.card-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: -20px;
+}
+.text-nlco-primary {
+  font-weight: 800;
+}
+.lead {
+  font-size: 14px;
+  font-weight: 700;
+}
+.featured-speaker-overlay {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(247, 176, 33, 0),
+    rgba(247, 176, 33, 1)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  overflow: scroll;
+}
+
+.featured-speaker-overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.desc {
+  font-size: 11px;
+}
+
+.featured-speaker-overlay .text {
+  color: white;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.featured-speaker-overlay a {
+  color: white;
+}
+
+.card:hover .featured-speaker-overlay {
+  opacity: 1;
+}
+
+/*.card:hover .card-subtitle {
+  color: #f7b021 !important;
+}*/
+
+.fs-social-icons {
+  gap: 3;
+}
+
+.hs-cohorts {
+  background-color: transparent;
+  gap: 0px;
+}
+
+.hs-cohorts button {
+  background-color: #bbbdc0;
+  border-radius: 0rem;
+  font-size: 12px;
+  border: none;
+  box-shadow: none;
+}
+
+.hs-cohorts button.active {
+  background-color: #1a1b43;
+  color: white;
+  font-weight: bold;
+}
+
+.cards-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.cards-carousel {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cards-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .cards-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .featured-speaker-card {
+    flex: 0 0 75%;
+    scroll-snap-align: start;
+  }
+
+  .dot-indicator {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dot-indicator li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+  }
+
+  .dot-indicator li.active {
+    background-color: #333;
+  }
+}

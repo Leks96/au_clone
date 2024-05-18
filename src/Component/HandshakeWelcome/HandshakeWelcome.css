@@ -1,0 +1,163 @@
+.handshake-welcome {
+  background-color: #1d1e4a;
+  background-image: url("../../../public/fi_565769.png"),
+    url("../../../public/fi_565769_1.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0% top 0%, left -25% top 20%;
+}
+.text-nlco-secondary {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.handshake-welcome p.text-white {
+  font-size: 14px;
+  font-weight: 600;
+}
+.day-div {
+  font-size: 12px;
+  cursor: pointer;
+}
+.day-div:not(:last-child) {
+  border-right: 2px solid #ffffff;
+}
+.days-container {
+  background-color: #1a1b43;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.active {
+  color: #59c1c6;
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+}
+
+.card-header {
+  font-weight: 600;
+  background-color: #1a1b43;
+  min-height: 100px;
+  align-items: center;
+  display: flex;
+}
+.card-body {
+  font-weight: 600;
+}
+.timeCol {
+  height: 350px;
+  align-items: center;
+  display: flex;
+}
+.event-title {
+  color: #59c1c6;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.panelist-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.panelist-img:hover {
+  border: 2px solid #f7b021;
+}
+
+.bg-dark-blue {
+  background-color: #1a1b43;
+}
+
+.tooltip .tooltip-arrow {
+  display: block;
+  width: 0.8rem;
+  height: 0.4rem;
+  color: #f7b021;
+}
+
+.popover {
+  color: #f7b021;
+  background-color: #f7b021;
+}
+
+.popover-body {
+  color: #ffffff;
+}
+
+.popover-arrow {
+  color: #f7b021;
+}
+
+.tooltip-arrow::before {
+  color: #f7b021 !important;
+}
+
+.tooltip::before {
+  color: #f7b021;
+}
+
+.tooltip-inner {
+  background-color: #f7b021 !important;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 881px) {
+  .timeCol {
+    height: 400px;
+  }
+  .event-title {
+    font-size: 18px;
+  }
+  .cb-fs-16 {
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .cb-fs-18 {
+    font-size: 16px;
+  }
+  .cb-datetime {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-nlco-secondary {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .hw .card {
+    margin: 0px 15px;
+  }
+  .bg-dark-blue {
+    background-color: #1d1e4a;
+  }
+  .cb-border-bottom {
+    border: 2px solid #101129;
+  }
+  .timeCol {
+    height: 350px;
+    display: block;
+  }
+  .event-title {
+    font-size: 20px;
+  }
+  .cb-fs-16 {
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .cb-fs-18 {
+    font-size: 18px;
+  }
+  .nav-tabs {
+    border-bottom: none !important;
+  }
+  .card {
+    border: none !important;
+  }
+  .cb-datetime {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
