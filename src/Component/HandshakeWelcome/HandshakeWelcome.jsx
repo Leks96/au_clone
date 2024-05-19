@@ -5,6 +5,11 @@ import ronaldo from "../../images/ronaldo.png";
 import ramos from "../../images/ramos.jpg";
 import serene from "../../images/serena.webp";
 import elon from "../../images/elon.jpg";
+import victor from '../../images/speakers/Mr-Victor.jpg'
+import nissem from '../../images/speakers/Ms-Nissem.jpg'
+import sandile from '../../images/speakers/Mr-Sandile.jpg'
+import aude from '../../images/speakers/Ms-Aude.jpg'
+//import hamza from '../../images/speakers/'
 
 import { OverlayTrigger, Popover } from "react-bootstrap";
 import { Image } from "react-bootstrap";
@@ -25,7 +30,7 @@ const HandshakeWelcome = () => {
   const allDaysContent = (
     <div className="col-md-12 justify-content-center hw d-sm-flex text-white-50">
       <div className="firstDiv card text-white-50 text-center d-none d-sm-block">
-        <div className="card-header">Time(GMT)</div>
+        <div className="card-header text-center">Time(GMT)</div>
         <div className="card-body timeCol">
           <div className="time">7:00AM - 11:00AM GMT</div>
         </div>
@@ -34,11 +39,13 @@ const HandshakeWelcome = () => {
         </div>
       </div>
       <div className="firstDiv card text-white-50 text-sm-center">
-        <div className="card-header d-none d-sm-block invisible">
+        <div className="card-header d-none d-sm-block bg-div">
+          <div className="invisible">
           Tuesday
           <br className="d-none d-sm-block" /> 9th January 2024
+          </div>
         </div>
-        <div className="card-body flex-column cb-border-bottom timeCol bg-dark-blue">
+        <div className="card-body flex-column cb-border-bottom timeCol bg-div">
           <h6 className="text-uppercase event-title">
             African Union<br className="d-none d-sm-block" /> (The Backstory)
           </h6>
@@ -55,7 +62,7 @@ const HandshakeWelcome = () => {
             <IoMdClock /> 12:00PM - 2:00PM{" "}
           </div>*/}
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
@@ -84,31 +91,19 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
             <img className="panelist-img" src={elon} />
           </div>
         </div>
-        <div className="card-body flex-column cb-border-bottom timeCol bg-dark-blue">
+        <div className="card-body flex-column cb-border-bottom timeCol bg-div">
           <h6 className="text-uppercase event-title">
             Agenda 2063:<br className="d-none d-sm-block" />The Africa We Want
-            <br className="d-none d-sm-block" />
           </h6>
-          <div className="text-white cb-fs-16 invisible">
-            Tackling Unemployment
-            <br className="d-none d-sm-block" /> At Scale
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
+          <br /><br />
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
@@ -137,7 +132,7 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
             <img className="panelist-img" src={elon} />
@@ -158,21 +153,13 @@ const HandshakeWelcome = () => {
             Perspectives from
             <br className="d-none d-sm-block" /> Employers of Labour
           </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
               trigger={["hover", "focus"]}
-              overlay={popover("Christiano Ronaldo")}
+              overlay={popover("Mr. Leslye Melinda Koumba")}
               key="top"
               placement="top"
             >
@@ -196,10 +183,17 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
-            <img className="panelist-img" src={elon} />
+            <OverlayTrigger
+              trigger={["hover", "focus"]}
+              overlay={popover("Mr. Hamza Sahl")}
+              key="top"
+              placement="top"
+            >
+              <img className="panelist-img ms-3" src={ronaldo} />
+            </OverlayTrigger>
           </div>
         </div>
         <div className="card-body flex-column cb-border-bottom timeCol">
@@ -209,16 +203,8 @@ const HandshakeWelcome = () => {
           <div className="text-white cb-fs-16 invisible">
             Spotlighting Noteworthy <br className="d-none d-sm-block" /> Models
           </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
@@ -247,7 +233,7 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
             <img className="panelist-img" src={elon} />
@@ -255,29 +241,24 @@ const HandshakeWelcome = () => {
         </div>
       </div>
       <div className="firstDiv card text-white-50 text-sm-center">
-        <div className="card-header d-none d-sm-block invisible">
+        <div className="card-header d-none d-sm-block bg-div">
+          <div className="invisible">
           Thursday
           <br className="d-none d-sm-block" /> 11th January 2024
+          </div>
         </div>
-        <div className="card-body flex-column cb-border-bottom timeCol bg-dark-blue">
+        <div className="card-body flex-column cb-border-bottom timeCol bg-div">
           <h6 className="text-uppercase event-title">
             Taking Action
           <br className="d-none d-sm-block" />
+          <br /> <br />
           </h6>
           <div className="text-white cb-fs-16 invisible">
             Insights for A Successful <br className="d-none d-sm-block" />{" "}
             Transition
           </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
@@ -306,46 +287,38 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
             <img className="panelist-img" src={elon} />
           </div>
         </div>
-        <div className="card-body flex-column cb-border-bottom timeCol bg-dark-blue">
+        <div className="card-body flex-column cb-border-bottom timeCol bg-div">
           <h6 className="text-uppercase event-title">
           Pathways, Opportunities<br className="d-none d-sm-block" />and Requirements
           </h6>
           <div className="text-white cb-fs-16 invisible">
             Spotlighting Noteworthy <br className="d-none d-sm-block" /> Models
           </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
               trigger={["hover", "focus"]}
-              overlay={popover("Christiano Ronaldo")}
+              overlay={popover("Ms. Nissem Bezzaouia")}
               key="top"
               placement="top"
             >
-              <Image className="panelist-img me-2" src={ronaldo} alt="Image" />
+              <Image className="panelist-img me-2" src={nissem} alt="Image" />
             </OverlayTrigger>
             <OverlayTrigger
               trigger={["hover", "focus"]}
-              overlay={popover("Sergio Ramos")}
+              overlay={popover("Mr. Sandile Peace Gumedze")}
               key="top"
               placement="top"
             >
-              <img className="panelist-img" src={ramos} />
+              <img className="panelist-img" src={sandile} />
             </OverlayTrigger>
             <OverlayTrigger
               trigger={["hover", "focus"]}
@@ -357,10 +330,17 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
-            <img className="panelist-img" src={elon} />
+            <OverlayTrigger
+              trigger={["hover", "focus"]}
+              overlay={popover("Mr. Victor Paa Kwesi Mensah")}
+              key="top"
+              placement="top"
+            >
+              <img className="panelist-img ms-3" src={victor} />
+            </OverlayTrigger>
           </div>
         </div>
       </div>
@@ -371,22 +351,14 @@ const HandshakeWelcome = () => {
         </div>
         <div className="card-body flex-column cb-border-bottom timeCol">
           <h6 className="text-uppercase event-title">
-          Understanding The AU<br className="d-none d-sm-block" />Talent Selection Process
+          Understanding The African Union<br className="d-none d-sm-block" /> Talent Selection Process
           </h6>
           <div className="text-white cb-fs-16 invisible">
             Strategies for Enduring <br className="d-none d-sm-block" /> Success
             in the Diaspora
           </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
             <OverlayTrigger
@@ -415,10 +387,17 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
-            <img className="panelist-img" src={elon} />
+            <OverlayTrigger
+              trigger={["hover", "focus"]}
+              overlay={popover("Ms. Aude Lucie Ayo-Adibet")}
+              key="top"
+              placement="top"
+            >
+              <img className="panelist-img ms-3" src={aude} />
+            </OverlayTrigger>
           </div>
         </div>
         <div className="card-body flex-column cb-border-bottom timeCol">
@@ -426,20 +405,13 @@ const HandshakeWelcome = () => {
             Virtual Mixers
           <br className="d-none d-sm-block" />
           </h6>
+          <br />
           <div className="text-white cb-fs-16 invisible">
             Strategies for Securing <br className="d-none d-sm-block" /> Global
             Opportunities
           </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
-          </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               panelist:
             </h6>
 
@@ -469,7 +441,7 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">
-            <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
+            <h6 className="text-uppercase text-pan mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
               moderator:
             </h6>
             <img className="panelist-img" src={elon} />
@@ -502,14 +474,6 @@ const HandshakeWelcome = () => {
           <div className="text-white cb-fs-16">
             Awakening a mindset of <br className="d-none d-sm-block" />{" "}
             possibilities
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-4">
-            {" "}
-            <IoCalendar /> 9th January 2024{" "}
-          </div>
-          <div className="cb-datetime d-block d-sm-none mt-3 mb-4">
-            {" "}
-            <IoMdClock /> 12:00PM - 2:00PM{" "}
           </div>
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
             <h6 className="text-uppercase text-white mb-2 pe-4 mt-2 mt-sm-0 pe-sm-0 cb-fs-18">
@@ -1241,13 +1205,13 @@ const HandshakeWelcome = () => {
     <section className="handshake-welcome pb-3 container-fluid">
       <div className="row mt-5 justify-content-center p-sm-0 p-3">
         <span className="col-md-8 text-center text-uppercase text-nlco-secondary">
-            Welcome To The African Union Virtual Careers Fair Masterclass
+            Welcome To The African Union Virtual Career Fair Masterclass
         </span>
-        <div className="col-md-10 text-center text-white mt-5 fw-bold">
-            A rich, bold, hearty and highly interactive half-day event, the fair will spotlight strategic decision makers from the AU who will provide first-hand information about the history, mandate, structures and opportunities available within the institution. The African Union Virtual Careers Fair Masterclass is not a box to be ticked. It is an intentional attempt to find, attract and nurture a highly  diverse, passionate and competent talent pipeline for the African Union.
+        <div className="col-md-10 text-center mt-5 fw-bold">
+        A rich, bold, hearty and highly interactive half-day event, the fair will spotlight strategic decision makers from the AU who will provide first-hand information about the history, mandate, structures and opportunities available within the institution. The African Union Virtual Career Fair Masterclass is not a box to be ticked. It is an intentional attempt to find, attract and nurture a highly diverse, passionate and competent talent pipeline for the African Union.
         </div>
-        <div className="col-md-10 text-center text-white mt-5 fw-bold">
-            Curated by Graduatepro and moderated by Naomi Lucas, The African Union Virtual Careers Fair Masterclass is a must-attend for Africans who want to build a global career.
+        <div className="col-md-10 text-center mt-5 fw-bold">
+        Curated by Graduatepro and moderated by Naomi Lucas, The African Union Virtual Career Fair Masterclass is a must-attend for Africans who want to build a global career.
         </div>
       </div>
 

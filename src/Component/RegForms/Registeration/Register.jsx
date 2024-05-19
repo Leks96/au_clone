@@ -504,7 +504,7 @@ export default function Register() {
                       value={formData.notifyAll}
                       name={"yes"}
                       onchangeFunc={handleCheckYes}
-                      label="Please check the box to give us permission to contact you about the African Union Careers Fair Masterclass and related activities."
+                      label="Please check the box to give us permission to contact you about the upcoming masterclass and related activities."
                     />
                   </div>
 

@@ -13,6 +13,12 @@ footer {
   font-size: 12px;
   font-weight: 500;
 }
+.footer-grad {
+  margin-top: -10%;
+}
+.social-grad {
+  margin-top: -7%;
+}
 .footer-ul li span {
   font-size: 10px;
   color: #1d1e4a;

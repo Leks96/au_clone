@@ -7,16 +7,22 @@
   background-position: center;
   background-size: cover;
   background-color: #9F2241;
+  z-index: -1;
 }
 
 .colorLayer {
-  background-color: #9F2241;
+  background-color: white;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 10%;
+  z-index: 0;
+}
+
+.speaker-pic {
+  width: 300px;
 }
 
 .rowContainer {
@@ -25,8 +31,8 @@
 
 .rectAngle {
   position: absolute;
-  top: -15%;
-  left: -5%;
+  top: -10%;
+  left: -2%;
 }
 
 .h-80 {
@@ -145,13 +151,20 @@
 .speakerName {
   color: white;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1rem;
+}
+.speakerJob {
+  font-size: 0.7rem;
+}
+
+.text-pan {
+  color: #9F2241;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 767px) {
   .h-40 {
-    height: 55vh !important;
+    height: 60vh !important;
   }
 
   .h-80 {
@@ -181,14 +194,14 @@
   }
 
   .leadText {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .secondaryText {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .dateTime {
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-top: 20px;
   }
 
@@ -209,11 +222,11 @@
 
   .leadText {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .secondaryText {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 }

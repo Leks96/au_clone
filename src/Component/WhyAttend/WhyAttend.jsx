@@ -9,7 +9,7 @@ const WhyAttend = () => {
         <div className="row">
           <div className="col-12 text-center mb-4">
             <span
-              className="text-center text-uppercase text-nlco-secondary"
+              className="text-center text-uppercase text-nlco-secondary d-none"
               style={{ fontSize: "14px" }}
             >
               Join the event
@@ -21,8 +21,8 @@ const WhyAttend = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-4 col-sm-12 mb-4 card">
-            <div className="card bg-white why-attend-card2">
+          <div className="col-md-4 col-sm-12 mb-4">
+            <div className="card bg-white why-attend-card2 h-100">
               <div className="card-body text-center">
                 <h5 className="card-title2 card-title-icon">
                   <IoBulb />
@@ -31,13 +31,14 @@ const WhyAttend = () => {
                   Learn
                 </h5>
                 <p className="card-text">
-                  Get first hand information on what the African Union is and what it is set up to achieve. Listen to key focal persons explain the inner workings of the institution.
+                Get first hand information on what the African Union's mandate is....<br />
+                and what it is set up to achieve. Listen to key focal persons explain the inner workings of the institution.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mb-4">
-            <div className="card bg-white why-attend-card">
+            <div className="card bg-white why-attend-card h-100">
               <div className="card-body text-center">
                 <h5 className="card-title card-title-icon">
                   <IoCloud />
@@ -52,7 +53,7 @@ const WhyAttend = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mb-4">
-            <div className="card bg-white why-attend-card1">
+            <div className="card bg-white why-attend-card1 h-100">
               <div className="card-body text-center">
                 <h5 className="card-title card-title-icon">
                   <IoGitNetwork />

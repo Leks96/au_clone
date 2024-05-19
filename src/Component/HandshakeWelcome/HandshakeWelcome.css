@@ -1,11 +1,7 @@
 .handshake-welcome {
-  background-color: #1d1e4a;
-  background-image: url("../../../public/fi_565769.png"),
-    url("../../../public/fi_565769_1.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 0% top 0%, left -25% top 20%;
+  background-color: #ffffff;
 }
-.text-nlco-secondary {
+.text-nlco-secondary, .text-nlco-secondary1 {
   font-weight: 700;
   font-size: 2rem;
 }
@@ -21,12 +17,13 @@
   border-right: 2px solid #ffffff;
 }
 .days-container {
-  background-color: #1a1b43;
+  background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .active {
-  color: #59c1c6;
+  color: #9F2241;
+  font-weight: 500;
 }
 
 .card {
@@ -37,7 +34,8 @@
 
 .card-header {
   font-weight: 600;
-  background-color: #1a1b43;
+  background-color: white;
+  color: #9F2241;
   min-height: 100px;
   align-items: center;
   display: flex;
@@ -49,6 +47,12 @@
   height: 350px;
   align-items: center;
   display: flex;
+}
+.time {
+  color: #9F2241;
+}
+.bg-div {
+  background-color: #e6e6e6;
 }
 .event-title {
   color: #59c1c6;

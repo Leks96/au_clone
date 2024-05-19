@@ -1,8 +1,11 @@
 .text-nlco-secondary {
+  color: #9F2241 !important;
+}
+.text-nlco-secondary1 {
   color: #f7b021 !important;
 }
 .text-nlco-primary {
-  color: #1d1e4a !important;
+  color: #9F2241 !important;
 }
 .text-nlco-info {
   color: #5ac5c9 !important;

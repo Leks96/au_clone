@@ -241,12 +241,12 @@ const Contacts = () => {
                     <div className={`${styles.info} p-6`}>
                       <h1 className="mb-2">Location</h1>
                       <p className={`text-start p-0 mb-2`}>
-                        3517 W. Gray St. Utica, Pennsylvania 57867
+                        Lagos, Nigeria.
                       </p>
                       <h1 className="mb-2">Contacts</h1>
                       <p className={`text-start p-0`}>ask@naomilucas.xyz</p>
                       <p className={`text-start p-0`}>
-                        www.handshake.naomilucas.xyz
+                       au.graduatepro.naomilucas.xyz
                       </p>
                     </div>
                   </div>

@@ -1,9 +1,10 @@
 .hashtag {
-  background-color: #151535;
+  background-color: #cce6e6;
 }
 .tag {
   font-weight: 800;
   font-size: 28px;
+  color: black;
 }
 
 @media (max-width: 767px) {

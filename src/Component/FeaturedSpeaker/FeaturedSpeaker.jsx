@@ -3,6 +3,27 @@ import "./FeaturedSpeaker.css";
 
 // ========== Featured Speakers 1.0 =============== //
 
+import monique from '../../images/speakers1/Dr-Monique.jpg'
+import fathallah from '../../images/speakers1/Fathallah.jpg'
+import nadege from '../../images/speakers1/Ms-Nadege.jpg'
+//import rico from '../../images/speakers1'
+import botho from '../../images/speakers1/Ms-Botho.jpg'
+import sandile from '../../images/speakers1/Mr-Sandile.jpg'
+//import hamza from '../../images/speakers1'
+//import leslye from '../../images/speakers1/'
+import victor from '../../images/speakers1/Mr-Victor.jpg'
+import nissem from '../../images/speakers1/Ms-Nissem.jpg'
+import aude from '../../images/speakers1/Ms-Aude.jpg'
+//import daudi from '../../images/speakers1/'
+import simone from '../../images/speakers1/Ms-Simone.jpg'
+import william from '../../images/speakers1/Mr-William.jpg'
+import netsanet from '../../images/speakers1/Ms-Netsanet.jpg'
+import naomi from '../../images/speakers1/MrsNaomi.jpg'
+//import mayowa from '../../images/speakers1/'
+import manuella from '../../images/speakers1/Ms-Manuella.jpg'
+import christopher from '../../images/speakers1/Mr-Christopher.jpg'
+import zinga from '../../images/speakers1/Ms-Zinga.jpg'
+
 import anayor_anuoha from "../../images/fs/1.0/anayor_onuoha.jpg";
 import chisom_nwokwu from "../../images/fs/1.0/chisom_nwokwu.jpg";
 import elsa_bankole from "../../images/fs/1.0/elsa_bankole.jpg";
@@ -23,23 +44,6 @@ import kelechukwu_n_nwokamilke from "../../images/fs/1.0/kelechukwu_n_nwokamike.
 import raliya_adamu from "../../images/fs/1.0/raliya_adamu.jpg";
 import marry_esther_anele from "../../images/fs/1.0/mary_esther_anele.jpg";
 
-// ========== Featured Speakers 2.0 =============== //
-
-import chales_odii from "../../images/fs/2.0/charles_odii.jpg";
-import chidubem_onyegbulu from "../../images/fs/2.0/chidubem_onyegbulu.jpg";
-import chisom_ejim from "../../images/fs/2.0/chisom_ejim.jpg";
-import debo_adejana from "../../images/fs/2.0/debo_adejana.jpg";
-import el_newman_samuel_gompil from "../../images/fs/2.0/newman.jpg";
-import elsa_bankole2 from "../../images/fs/2.0/elsa_bankole.jpg";
-import ibukun_amosun from "../../images/fs/2.0/ibukun_amosun.jpg";
-import maraim_adeyemi from "../../images/fs/2.0/mariam_adeyemi.jpg";
-import mohammed_mijindadi from "../../images/fs/2.0/mohammed_mijindadi.jpg";
-import molade_adeniyi from "../../images/fs/2.0/molade_adeniyi.jpg";
-import nkiru_olumide_ojo from "../../images/fs/2.0/nkiru_olumide_ojo.jpg";
-import progress_okuk from "../../images/fs/2.0/progress_okuk.jpg";
-import victor_mensah from "../../images/fs/2.0/victor_mensah.jpg";
-import victoria_ohaeri from "../../images/fs/2.0/victoria_ohaeri.jpg";
-import wamide_animashaun from "../../images/fs/2.0/wamide_animashaun.jpg";
 
 // ========== modal for speakers ============= //
 
@@ -54,6 +58,7 @@ import {
 } from "react-icons/io5";
 import { Col, Container, Image, Modal, Row } from "react-bootstrap";
 
+
 const FeaturedSpeaker = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [selectedHS, setSelectedHS] = useState("1.0");
@@ -61,21 +66,21 @@ const FeaturedSpeaker = () => {
 
   const featuredSpeakers = [
     {
-      name: "Elsa Bankole",
-      title: "Founder, ElsaLagos",
-      image: elsa_bankole,
+      name: "His Excellency, Dr. Monique Nsanzabaganwa",
+      title: "Deputy Chairperson (DCP), African Union Commission",
+      image: monique,
       batch: "1.0",
-      desc: "Elsa Bankole is the founder of ElsaLagos, a fashion brand that caters to lovers of jewellery. With a carefully curated and extensive range of unique and affordable jewellery, Elsa is putting a spin on conventional jewellery retailing. Using her phone, with Instagram and whatsapp as her main tech tools, Elsa has created a business model that is noteworthy.",
-      id: 1,
-      instagram: "Elsalagos.ng",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
+      //desc: "Elsa Bankole is the founder of ElsaLagos, a fashion brand that caters to lovers of jewellery. With a carefully curated and extensive range of unique and affordable jewellery, Elsa is putting a spin on conventional jewellery retailing. Using her phone, with Instagram and whatsapp as her main tech tools, Elsa has created a business model that is noteworthy.",
+      //id: 1,
+      //instagram: "Elsalagos.ng",
+      //linkedIn: "",
+      //facebook: "",
+      //twitter: "",
     },
     {
-      name: "Pelu Awofeso",
-      title: "CEO, Travel Next Door",
-      image: pelu_awofeso,
+      name: "His Excellency, Fathallah Sijilmassi",
+      title: "Director-General, African Union Commision",
+      image: fathallah,
       batch: "1.0",
       desc: "Pelu Awofeso, founder and CEO of Travel Next Door, is one of the leading names in Nigeria's domestic tourism space. His contributions to, and influence in, the industry cuts across journalism, publishing, cultural consultancy. ",
       id: 2,
@@ -85,9 +90,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Raquel Kashim Daniel",
-      title: "Co-founder, Bambini Africa",
-      image: raquel_kashim,
+      name: "Ms. Nadege Thandu",
+      title: "Director, Human Resources Management Directorate (HRMD), African Union Commision",
+      image: nadege,
       batch: "1.0",
       desc: "Raquel Kasham Daniel is a driven social entrepreneur and development practitioner with a decade of experience in Nigeria's development sector. She is the co-founder of Bambini Africa.",
       id: 3,
@@ -97,21 +102,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Olumide Gbadebo",
-      title: "CEO, Adunni Organics",
-      image: olumide_gbadebo,
-      batch: "1.0",
-      desc: "Beauty products entrepreneur Olumide Gbadebo is the founder of Adunni Organics, one of the first indigenous beauty e-commerce brands in Nigeria.",
-      id: 4,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Jerry Uke",
-      title: "Senior Program Manager, Alt School Africa",
-      image: jerry_uke,
+      name: "Ms. Botho Kebabonye Bayendi",
+      title: "Director, Strategic Planning and Delivery Directorate (SPDD), AUC",
+      image: botho,
       batch: "1.0",
       desc: "Jerry is a Senior Program Manager with 6+ years experience building sustainable impact, business, and learning & development programs in the Venture Capital/ Startup Ecosystems, Educational Technology, and Community spaces.",
       id: 5,
@@ -121,45 +114,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Harry Enaholo",
-      title: "Founder, Treford Tech Africa",
-      image: harry_anaholo,
-      batch: "1.0",
-      desc: "Harry is a management expert with over eight years of managerial experience in tech cutting across operations, product, growth and talent development in sectors like Fintech, SaaS and EdTech.",
-      id: 6,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Chisom Nwokwu",
-      title: "Software Engineer, Microsoft",
-      image: chisom_nwokwu,
-      batch: "1.0",
-      desc: "Chisom Nwokwu (fondly called TechQueen) is a renowned Software Engineer based in Lagos, Nigeria working with the Sustainability Team at Microsoft, she joined Microsoft as a new graduate shortly after rounding up an internship with the Bank of America, where she worked as a Technology analyst.",
-      id: 7,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Temidayo Salako",
-      title: "Business Unit Lead, Tunga",
-      image: temidayo_salako,
-      batch: "1.0",
-      desc: "Temidayo Salako is a catalyst and a systems builder with experience in business operations, strategic startup management, project management, human resource management, training, and consulting within the tech industry.",
-      id: 8,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Anayor Onuoha",
-      title: "Technical Recruiter, Alerzo",
-      image: anayor_anuoha,
+      name: "Mr. Victor Paa Kwesi Mensah",
+      title: "Human Resources Projects Manager, HRMD",
+      image: victor,
       batch: "1.0",
       desc: "Anayor is a competent and assured individual, demonstrating the qualities of a self-starter with the unwavering commitment and drive required to excel in a fast-paced HR department. ",
       id: 9,
@@ -169,21 +126,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Gloria Ngozi Alado",
-      title: "Talent Acquisition Lead, Recruitment Den",
-      image: gloria_ngozi_alado,
-      batch: "1.0",
-      desc: "Gloria Ngozi Alado is an accomplished Recruiter and Corporate Communications specialist developing in her career since 2020.",
-      id: 10,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Riman Ebarere",
-      title: "Senior Technical recruiter, Amazon Web Services",
-      image: riman_ebarere,
+      name: "Ms. Aude Lucie Ayo-Adibet",
+      title: "Head, Talent Acquisition Unit, HRMD, African Union Commision",
+      image: aude,
       batch: "1.0",
       desc: "Riman is a seasoned technical recruiter with almost a decade of expertise in specialised recruiting, spanning technical and non-technical roles.",
       id: 11,
@@ -193,33 +138,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Ibukun Amosu",
-      title: "Tech Talent Partner, Remote Giggs",
-      image: ibukun_amosu,
-      batch: "1.0",
-      desc: "Ibukun (IBK) has carved a remarkable niche for himself as a Tech Talent Partner for global corporations and startups, while also being the visionary Founder of The Intern Place (TiP), a dynamic internship talent community.",
-      id: 12,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Obinna Igwebuike",
-      title: "Consulting Team Lead, Sawubona Advisory Services",
-      image: obinna_igwebuike,
-      batch: "1.0",
-      desc: "Obinna has sixteen years’ experience in management & development consulting and fintech product development. He is currently Consulting Team Lead, at Sawubona Advisory Services, a management consulting practice and a Supervisory Director in charge of Policy Design and Development at AT & Harvey Consulting, a development consultancy. Both businesses are based in Lagos, Nigeria.",
-      id: 13,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Joshua Oyekanmi",
-      title: "Program Manager, Etiwatech",
-      image: joshua_oyekanmi,
+      name: "Mr. William Carew",
+      title: "Head of AU ECOSOCC Secretariat, Zambia",
+      image: william,
       batch: "1.0",
       desc: "Joshua Oyekanmi is a seasoned professional with a rich background in program management and consultancy. I currently serve as a Program Manager at Etiwa Tech in Lekki, Lagos State, where I have been instrumental in driving positive change.",
       id: 14,
@@ -229,9 +150,33 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Toyyib Adelodun",
-      title: "Chief Service Officer, Toyibb Adelodun International",
-      image: toyyib_adedodun,
+      name: "Mr. Sandile Peace Gumedze",
+      title: "Head, Human Resources Planning & Organization Development (HRPOD) Division, HRMD",
+      image: sandile,
+      batch: "1.0",
+      desc: "Harry is a management expert with over eight years of managerial experience in tech cutting across operations, product, growth and talent development in sectors like Fintech, SaaS and EdTech.",
+      id: 6,
+      instagram: "",
+      linkedIn: "",
+      facebook: "",
+      twitter: "",
+    },
+    {
+      name: "Ms. Simone Yankey-Ouattara",
+      title: "Ag. Head, AU-CIEFFA, Burkina Faso",
+      image: simone,
+      batch: "1.0",
+      desc: "Obinna has sixteen years’ experience in management & development consulting and fintech product development. He is currently Consulting Team Lead, at Sawubona Advisory Services, a management consulting practice and a Supervisory Director in charge of Policy Design and Development at AT & Harvey Consulting, a development consultancy. Both businesses are based in Lagos, Nigeria.",
+      id: 13,
+      instagram: "",
+      linkedIn: "",
+      facebook: "",
+      twitter: "",
+    },
+    {
+      name: "Ms. Netsanet Getachew",
+      title: "Human Resources Officer, AU PCRD, Egypt",
+      image: netsanet,
       batch: "1.0",
       desc: "Toyyib Adelodun is a seasoned Civil Engineer with an impressive track record spanning over a decade, having worked with renowned companies such as Costain, Skanska, and Balfour Beatty.",
       id: 15,
@@ -241,9 +186,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Dr. Kelechukwu N. Onwukamike",
-      title: "Founder, DEKEMP",
-      image: kelechukwu_n_nwokamilke,
+      name: "Naomi Lucas",
+      title: "Founder, Graduatepro",
+      image: naomi,
       batch: "1.0",
       desc: "Dr. Kelechukwu N. ONWUKAMIKE (PhD)(Dr.rer.nat) is published author of “Till We All Win” book and currently a Research Scientist working for Procter & Gamble Germany.",
       id: 16,
@@ -253,21 +198,9 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Obi Ike",
-      title: "CEO, Alvative",
-      image: obi_ike,
-      batch: "1.0",
-      desc: "Ike Obi has over 10yrs of professional technology startup experience spanning different roles and stages - from software development to business development, sales and growth.",
-      id: 17,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Raliyah Adamu",
-      title: "Trainer, Cybarik GRC Academy",
-      image: raliya_adamu,
+      name: "Ms. Manuella Diaha",
+      title: "Senior HR Efficiency and Systems Coherence Officer, HRMD, AUC.",
+      image: manuella,
       batch: "1.0",
       desc: "My name is Raliyah Adamu Manu, a trainer at Cybarik GRC Academy and a GRC Analyst at Digital Jewels Africa where I focus on planning and implementing policies, procedures, standards, and controls to govern the protection of corporate information systems.",
       id: 18,
@@ -276,10 +209,82 @@ const FeaturedSpeaker = () => {
       facebook: "",
       twitter: "",
     },
+    //{
+    //  name: "Mr. Rico Bien Aime",
+    //  title: "Director, Operations Support Services Directorate (OSSD), African Union Commission",
+    //  //image: rico,
+    //  batch: "1.0",
+    //  desc: "Beauty products entrepreneur Olumide Gbadebo is the founder of Adunni Organics, one of the first indigenous beauty e-commerce brands in Nigeria.",
+    //  id: 4,
+    //  instagram: "",
+    //  linkedIn: "",
+    //  facebook: "",
+    //  twitter: "",
+    //},
+    //{
+    //  name: "Mr. Hamza Sahl",
+    //  title: "Head, Human Resources Shared Services (HRSS) Division, HRMD",
+    //  //image: hamza,
+    //  batch: "1.0",
+    //  desc: "Chisom Nwokwu (fondly called TechQueen) is a renowned Software Engineer based in Lagos, Nigeria working with the Sustainability Team at Microsoft, she joined Microsoft as a new graduate shortly after rounding up an internship with the Bank of America, where she worked as a Technology analyst.",
+    //  id: 7,
+    //  instagram: "",
+    //  linkedIn: "",
+    //  facebook: "",
+    //  twitter: "",
+    //},
+    //{
+    //  name: "Mr. Leslye Melinda Koumba",
+    //  title: "Head, Payroll Unit, AHRMD, AfCFTA",
+    //  //image: leslye,
+    //  batch: "1.0",
+    //  desc: "Temidayo Salako is a catalyst and a systems builder with experience in business operations, strategic startup management, project management, human resource management, training, and consulting within the tech industry.",
+    //  id: 8,
+    //  instagram: "",
+    //  linkedIn: "",
+    //  facebook: "",
+    //  twitter: "",
+    //},
     {
-      name: "Mary-Esther Anele",
-      title: "Founder, Inclusivelyremote",
-      image: marry_esther_anele,
+      name: "Ms. Nissem Bezzaouia",
+      title: "Head, Administration and Human Resources Management Division (AHRMD), AfCFTA.",
+      image: nissem,
+      batch: "1.0",
+      desc: "Gloria Ngozi Alado is an accomplished Recruiter and Corporate Communications specialist developing in her career since 2020.",
+      id: 10,
+      instagram: "",
+      linkedIn: "",
+      facebook: "",
+      twitter: "",
+    },
+    //{
+    //  name: "Mr. Daudi Mkoma",
+    //  title: "Head, Administration and Human Resources Division, AUCDC",
+    //  //image: daudi,
+    //  batch: "1.0",
+    //  desc: "Ibukun (IBK) has carved a remarkable niche for himself as a Tech Talent Partner for global corporations and startups, while also being the visionary Founder of The Intern Place (TiP), a dynamic internship talent community.",
+    //  id: 12,
+    //  instagram: "",
+    //  linkedIn: "",
+    //  facebook: "",
+    //  twitter: "",
+    //},
+    //{
+    //  name: "Mayowa Adegoke",
+    //  title: "International Journalist and Speaker",
+    //  //image: mayowa,
+    //  batch: "1.0",
+    //  desc: "Ike Obi has over 10yrs of professional technology startup experience spanning different roles and stages - from software development to business development, sales and growth.",
+    //  id: 17,
+    //  instagram: "",
+    //  linkedIn: "",
+    //  facebook: "",
+    //  twitter: "",
+    //},
+    {
+      name: "Mr. Christopher Orilogbon",
+      title: "Human Resources Information Systems (HRIS) Administrator, HRMD, AUC.",
+      image: christopher,
       batch: "1.0",
       desc: "Mary-Esther Anele is the Founder of Inclusivelyremote, a remote job board and resource site established to foster inclusive and equal remote opportunities for everyone anywhere as well as promote inclusive remote startups.",
       id: 19,
@@ -289,187 +294,17 @@ const FeaturedSpeaker = () => {
       twitter: "",
     },
     {
-      name: "Elsa Bankole",
-      title: "Founder, ElsaLagos",
-      image: elsa_bankole2,
-      batch: "2.0",
+      name: "Ms. Zinga Clara Suama",
+      title: "Recruitment Officer, Talent Acquisition Unit, HRMD, AUC",
+      image: zinga,
+      batch: "1.0",
       desc: "Elsa Bankole is the founder of ElsaLagos, a fashion brand that caters to lovers of jewellery. With a carefully curated and extensive range of unique and affordable jewellery, Elsa is putting a spin on conventional jewellery retailing.",
       id: 20,
       instagram: "",
       linkedIn: "",
       facebook: "",
       twitter: "",
-    },
-    {
-      name: "Victoria Ohaeri",
-      title:
-        "Founder & Director of Research and Policy at Spaces for Change [S4C]",
-      image: victoria_ohaeri,
-      batch: "2.0",
-      desc: "Victoria, the visionary founder and director of research and policy at Spaces for Change [S4C], has dedicated her 15-year legal career to advancing social and economic rights globally.",
-      id: 21,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Mariam Adeyemi",
-      title: "Tech Entrepreneur",
-      image: maraim_adeyemi,
-      batch: "2.0",
-      desc: "Mariam Adeyemi is a seasoned senior analyst, the visionary founder of TechaVilly, a tech training company. With an impressive educational background, Mariam holds a master's degree in Business Analytics from Texas A&M University, augmenting her extensive corporate experience spanning over a decade.",
-      id: 22,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Chidubem Onyegbule",
-      title: "Product Manager, Interswitch ",
-      image: chidubem_onyegbulu,
-      batch: "2.0",
-      desc: "Chidubem is a seasoned Product Manager, currently working with Interswitch Group. He is deeply committed to building products that provide solutions to everyday human challenges and help people maximise their potential.",
-      id: 23,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Victor Mensah",
-      title: "Specialist on Management & Organisation Development Consulting",
-      image: victor_mensah,
-      batch: "2.0",
-      desc: "Victor Mensah specialises in Management and Organisation Development Consulting, Strategic Management, Ideation Management, Curriculum Development, Training and Capacity Development, online training platforms, Sustainable ICT Platforms for enterprises.",
-      id: 24,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Chisom Ejim",
-      title: "Development Operations Engineer",
-      image: chisom_ejim,
-      batch: "2.0",
-      desc: "Chisom is a Development Operations Engineer with experience optimising software development and deployment processes through automation, CI/CD, and infrastructure as code.",
-      id: 25,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Nkiru Olumide-Ojo",
-      title: "author",
-      image: nkiru_olumide_ojo,
-      batch: "2.0",
-      desc: "Nkiru Olumide-Ojo is a Nigerian female author, columnist, development speaker and technocrat, with a career history in financial services, aviation, telecommunication and petroleum sectors.",
-      id: 26,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Debo Adejana",
-      title: "Real estate entrepreneur",
-      image: debo_adejana,
-      batch: "2.0",
-      desc: "Debo Adejana is an astute real estate entrepreneur who heads one of Nigeria's leading Mass Housing Development Company: Realty Point Limited since 2005",
-      id: 27,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Mohammed Mijindadi",
-      title:
-        "President of GE Nigeria & Managing Director of GE Gas Power Systems (GPS)",
-      image: mohammed_mijindadi,
-      batch: "2.0",
-      desc: "Mohammed N. Mijindadi is the President of GE Nigeria & Managing Director of GE Gas Power Systems (GPS) for Nigeria & Anglo West Africa, responsible for executive oversight and strengthening GE’s impact in the region while building strong stakeholder relationships across GE’s Power, Healthcare and Renewable energy sectors.",
-      id: 28,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Charles Odii",
-      title: "Founder & Executive Director, SME100Africa",
-      image: chales_odii,
-      batch: "2.0",
-      desc: "Charles Odii is the founder and executive director of SME100Africa, an organisation that inspires, empowers and equips young entrepreneurs and Small and Medium Scale Enterprises in Africa by providing: access to finance, access to markets, access to inspiring networks, capacity development, and access to information.",
-      id: 29,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Progress Okuk",
-      title: "Team Manager, KASFAB CONCEPTS",
-      image: progress_okuk,
-      batch: "2.0",
-      desc: "Progress is sharp as a tack. She is a non conformist who incorporates business abilities with street astuteness. She is not given to the grandiose of status quo nor the limitations of traditional propriety. She understands the priority of PEOPLE, MONEY and TIME and encourages humour to make for a healthy work environment.",
-      id: 30,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Wamide Animashaun",
-      title: "founder, CAWSTEM (Connecting African Women in STEM)",
-      image: wamide_animashaun,
-      batch: "2.0",
-      desc: "Wamide Animashaun currently leads Ecosystem & Partnerships at Propel, driving product growth while nurturing a network of over 150 tech communities across Africa.",
-      id: 31,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Molade Adeniyi",
-      title: "CEO, WAVE (West Africa Vocational Education)",
-      image: molade_adeniyi,
-      batch: "2.0",
-      desc: "Molade Adeniyi, CEO of WAVE (West Africa Vocational Education), is a visionary leader dedicated to empowering the youth of West Africa with the skills and opportunities they need to realise their full potential.",
-      id: 32,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "El-Newman Samuel Gompil",
-      title: "Producer",
-      image: el_newman_samuel_gompil,
-      batch: "2.0",
-      desc: "El- Newman Samuel Gompil has enjoyed a chequered career of over 15 years in the media and communications space as a producer, and, in film, radio and television production management.",
-      id: 33,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
-    {
-      name: "Ibukun Amosu",
-      title: "Tech Talent Partner, Remote Giggs",
-      image: ibukun_amosun,
-      batch: "2.0",
-      desc: "Ibukun (IBK) has carved a remarkable niche for himself as a Tech Talent Partner for global corporations and startups, while also being the visionary Founder of The Intern Place (TiP), a dynamic internship talent community.",
-      id: 34,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
+    }
   ];
 
   const handleSpeakerClick = (e, speaker) => {

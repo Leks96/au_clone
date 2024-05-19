@@ -70,7 +70,7 @@ const Partners = () => {
       <section className="join-now py-4">
         <div className="row justify-content-center mt-3">
           <span className="text-center col-md-10 text-uppercase text-white partners-title">
-            Build A Global Career. Join the African Union.
+            Build A Global Career. <br /> Join the African Union.
           </span>
           <div className="text-center mt-3">
             <Link to={"/register"}>
