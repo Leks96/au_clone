@@ -66,7 +66,7 @@ const FeaturedSpeaker = () => {
 
   const featuredSpeakers = [
     {
-      name: "His Excellency, Dr. Monique Nsanzabaganwa",
+      name: "Her Excellency, Dr. Monique Nsanzabaganwa",
       title: "Deputy Chairperson (DCP), African Union Commission",
       image: monique,
       batch: "1.0",
@@ -173,18 +173,18 @@ const FeaturedSpeaker = () => {
       facebook: "",
       twitter: "",
     },
-    {
-      name: "Ms. Netsanet Getachew",
-      title: "Human Resources Officer, AU PCRD, Egypt",
-      image: netsanet,
-      batch: "1.0",
-      desc: "Toyyib Adelodun is a seasoned Civil Engineer with an impressive track record spanning over a decade, having worked with renowned companies such as Costain, Skanska, and Balfour Beatty.",
-      id: 15,
-      instagram: "",
-      linkedIn: "",
-      facebook: "",
-      twitter: "",
-    },
+    //{
+    //  name: "Ms. Netsanet Getachew",
+    //  title: "Human Resources Officer, AU PCRD, Egypt",
+    //  image: netsanet,
+    //  batch: "1.0",
+    //  desc: "Toyyib Adelodun is a seasoned Civil Engineer with an impressive track record spanning over a decade, having worked with renowned companies such as Costain, Skanska, and Balfour Beatty.",
+    //  id: 15,
+    //  instagram: "",
+    //  linkedIn: "",
+    //  facebook: "",
+    //  twitter: "",
+    //},
     {
       name: "Naomi Lucas",
       title: "Founder, Graduatepro",
@@ -497,8 +497,8 @@ const FeaturedSpeaker = () => {
                     <h5 class="card-title text-uppercase text-muted mt-3 nlco-fct">
                       {fs.title}
                     </h5>
-                    <div className="d-flex mt-3 justify-content-between card-subtitle">
-                      <h5 class="text-capitalize">{fs.name}</h5>
+                    <div className="d-flex mt-3 justify-content-between">
+                      <h5 class="text-capitalize card-subtitle">{fs.name}</h5>
                       {/*<IoArrowUp className="rotate-90 text-end" />*/}
                     </div>
                   </div>

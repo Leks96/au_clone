@@ -49,13 +49,13 @@
   display: flex;
 }
 .time {
-  color: #9F2241;
+  color: white;
 }
 .bg-div {
-  background-color: #e6e6e6;
+  background-color: #1DCAD3;
 }
 .event-title {
-  color: #59c1c6;
+  color: white;
   font-weight: 700;
   margin-top: 20px;
 }

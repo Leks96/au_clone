@@ -12,6 +12,7 @@ import {
   IoLogoTiktok,
   IoLogoTwitter,
 } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -32,15 +33,21 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="col-md-12 col-12 text-sm-center mx-2">
-                <span className="footer-social-links">
-                  <IoLogoInstagram className="footer-social-icon" />
-                </span>
-                <span className="footer-social-links">
-                  <IoLogoLinkedin className="footer-social-icon" />
-                </span>
-                <span className="footer-social-links">
-                  <IoLogoFacebook className="footer-social-icon" />
-                </span>
+                <Link to={"https://twitter.com/_AfricanUnion"}>
+                  <span className="footer-social-links">
+                    <FaXTwitter className="footer-social-icon" />
+                  </span>
+                </Link>
+                <Link to={"https://www.facebook.com/AfricanUnionCommission"}>
+                  <span className="footer-social-links">
+                    <IoLogoFacebook className="footer-social-icon" />
+                  </span>
+                </Link>
+                <Link to={"https://au.int/#"}>
+                  <span className="footer-social-links">
+                    <IoLogoLinkedin className="footer-social-icon" />
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
@@ -54,7 +61,7 @@ const Footer = () => {
                 <a href="#">Privacy</a>
               </li>
               <li className="mt-3">
-                <span> &copy; 2023 Handshake </span>
+                <span> &copy; 2024 Naomi Lucas </span>
               </li>
             </ul>
           </div>
@@ -71,15 +78,21 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="col-md-12 col-12 text-sm-center mx-2 social-grad">
-                <span className="footer-social-links">
-                  <IoLogoInstagram className="footer-social-icon" />
-                </span>
-                <span className="footer-social-links">
-                  <IoLogoLinkedin className="footer-social-icon" />
-                </span>
-                <span className="footer-social-links">
-                  <IoLogoFacebook className="footer-social-icon" />
-                </span>
+              <Link to={"https://x.com/GraduatePro"}>
+                  <span className="footer-social-links">
+                    <FaXTwitter className="footer-social-icon" />
+                  </span>
+                </Link>
+                <Link to={"https://www.facebook.com/GraduatePro"}>
+                  <span className="footer-social-links">
+                    <IoLogoFacebook className="footer-social-icon" />
+                  </span>
+                </Link>
+                <Link to={"https://www.linkedin.com/company/naomi-lucas"}>
+                  <span className="footer-social-links">
+                    <IoLogoLinkedin className="footer-social-icon" />
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

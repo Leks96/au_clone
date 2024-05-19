@@ -28,7 +28,7 @@ export default function Register() {
     lastName: "",
     email: "",
     joiningFrom: "",
-    residentCountry: "",
+    countryOfOrigin: "",
     gender: "",
     qualification: "",
     employmentStatus: "",
@@ -55,57 +55,57 @@ export default function Register() {
   const [showMenu, setShowMenu] = useState(false);
 
   const qualifications = [
-      { 
-        label: "Vocational Degree (E.g. Catering, Fashion Design, Plumbing)", 
-        value: "Vocational Degree (E.g. Catering, Fashion Design, Plumbing)" 
-      },
-      { 
-        label: "Ordinary/Higher National Diploma or Bachelors degree", 
-        value: "Ordinary/Higher National Diploma or Bachelors degree" 
-      },
-      { 
-        label: "Post-Graduate Degree (PGD, Masters, PHD or equivalent)", 
-        value: "Post-Graduate Degree (PGD, Masters, PHD or equivalent)" 
-      }
-  ]
+    {
+      label: "Vocational Degree (E.g. Catering, Fashion Design, Plumbing)",
+      value: "Vocational Degree (E.g. Catering, Fashion Design, Plumbing)",
+    },
+    {
+      label: "Ordinary/Higher National Diploma or Bachelors degree",
+      value: "Ordinary/Higher National Diploma or Bachelors degree",
+    },
+    {
+      label: "Post-Graduate Degree (PGD, Masters, PHD or equivalent)",
+      value: "Post-Graduate Degree (PGD, Masters, PHD or equivalent)",
+    },
+  ];
 
   const employmentStatus = [
-      { 
-        label: "Unemployed", 
-        value: "Unemployed" 
-      },
-      { 
-        label: "Employed", 
-        value: "Employed" 
-      },
-      { 
-        label: "Freelancer", 
-        value: "Freelancer" 
-      },
-      { 
-        label: "Founder/Business Owner", 
-        value: "Founder/Business Owner" 
-      },
-      {
-        label: "Not applicable", 
-        value: "Not applicable" 
-      }
-  ]
+    {
+      label: "Unemployed",
+      value: "Unemployed",
+    },
+    {
+      label: "Employed",
+      value: "Employed",
+    },
+    {
+      label: "Freelancer",
+      value: "Freelancer",
+    },
+    {
+      label: "Founder/Business Owner",
+      value: "Founder/Business Owner",
+    },
+    {
+      label: "Not applicable",
+      value: "Not applicable",
+    },
+  ];
 
   const experience = [
-      { 
-        label: "Between  1 and 5 years", 
-        value: "Between  1 and 5 years" 
-      },
-      { 
-        label: "Between 5 and 8 years", 
-        value: "Between 5 and 8 years" 
-      },
-      { 
-        label: "Over 8 years", 
-        value: "Over 8 years" 
-      }
-  ]
+    {
+      label: "Between  1 and 5 years",
+      value: "Between  1 and 5 years",
+    },
+    {
+      label: "Between 5 and 8 years",
+      value: "Between 5 and 8 years",
+    },
+    {
+      label: "Over 8 years",
+      value: "Over 8 years",
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -210,19 +210,21 @@ export default function Register() {
     const fd = new FormData();
 
     fd.append("type", "attendee");
-    fd.append("firstName", formData.firstName);
-    fd.append("lastName", formData.lastName);
+    fd.append("firstname", formData.firstName);
+    fd.append("lastname", formData.lastName);
     fd.append("email", formData.email);
     fd.append("phone", phone);
-    fd.append("joiningFrom", formData.joiningFrom);
-    fd.append("residentCountry", formData.residentCountry);
+    fd.append("joining_from", formData.joiningFrom);
+    fd.append("country_of_origin", formData.countryOfOrigin);
     fd.append("gender", formData.gender);
     fd.append("qualification", formData.qualification);
     fd.append("employmentStatus", formData.employmentStatus);
     fd.append("experience", formData.experience);
-    fd.append("whatYouDo", formData.whatYouDo);
+    fd.append("what_do_you_do", formData.whatYouDo);
     fd.append("role", formData.role);
     fd.append("notifyAll", formData.notifyAll);
+    fd.append("nlco_newsletter", true);
+    fd.append("handshake_newsletter", true);
 
     // await new Promise((resolve, reject) => {
     //   setTimeout(() => {
@@ -232,10 +234,9 @@ export default function Register() {
 
     // console.log(fd);
     try {
-      const url = process.env.REACT_APP_API_URL;
+      const url = process.env.REACT_APP_API_URL + "/register";
       const res = await axios.post(url, fd);
       console.log(res);
-      // if (res.statusText === "OK" && res.data === "registration successful") {
       setSubmitted(true);
       setErrorText("");
       setRegisteredName(formData.fullName);
@@ -244,7 +245,7 @@ export default function Register() {
         lastName: "",
         email: "",
         joiningFrom: "",
-        residentCountry: "",
+        countryOfOrigin: "",
         gender: "",
         qualification: "",
         employmentStatus: "",
@@ -253,14 +254,10 @@ export default function Register() {
         role: "",
         notifyAll: true,
       }));
-
       setIsLoading(false);
-      // } else {
-      //   setIsLoading(false);
-      //   setErrorText(res.data);
-      // }
     } catch (error) {
       console.error("Error on submitting the form", error);
+      setIsLoading(false);
       setSubmitted(false);
       setErrorText(error.toString());
     }
@@ -397,7 +394,7 @@ export default function Register() {
                       options={[
                         { label: "Male", value: "male" },
                         { label: "Female", value: "female" },
-                        { label: "Other", value: "other" }
+                        { label: "Other", value: "other" },
                       ]}
                       onChange={(val) => {
                         handleCustomSelectChange(val, "gender");
@@ -411,10 +408,10 @@ export default function Register() {
                     <CustomSelect
                       options={countries}
                       onChange={(val) => {
-                        handleCustomSelectChange(val, "joiningFrom");
+                        handleCustomSelectChange(val, "countryOfOrigin");
                       }}
-                      value={formData.joiningFrom}
-                      name="joiningFrom"
+                      value={formData.countryOfOrigin}
+                      name="countryOfOrigin"
                       word="What country are you from? *"
                     />
                   </div>
@@ -422,10 +419,10 @@ export default function Register() {
                     <CustomSelect
                       options={countries}
                       onChange={(val) => {
-                        handleCustomSelectChange(val, "residentCountry");
+                        handleCustomSelectChange(val, "joiningFrom");
                       }}
-                      value={formData.residentCountry}
-                      name="residentCountry"
+                      value={formData.joiningFrom}
+                      name="joiningFrom"
                       word="What country do you live in? *"
                     />
                   </div>
