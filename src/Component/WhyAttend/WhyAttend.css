@@ -118,7 +118,7 @@
 }
 
 .why-attend-card:hover {
-  background-color: #bbbdc0 !important;
+  background-color: #e5eb7b !important;
 }
 
 @media (max-width: 767px) {
@@ -130,6 +130,6 @@
   }
 
   .why-attend-card {
-    background-color: #bbbdc0 !important;
+    background-color: #e5eb7b !important;
   }
 }
