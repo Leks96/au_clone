@@ -298,7 +298,7 @@ const Hero = () => {
     <div className="container-fluid mt-3">
       <div className="row d-sm-flex align-items-center">
         <div className="col-md-3 col-6 text-center border-right text-white fw-bolder">
-          <IoCalendar /> 7 Days
+          <IoCalendar /> 7 Hours
         </div>
         <div className="col-md-3 col-6 text-center border-right text-white fw-bolder">
           <IoCalendar /> 7 Events
