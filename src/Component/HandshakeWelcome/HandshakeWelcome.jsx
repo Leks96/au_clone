@@ -99,7 +99,7 @@ const HandshakeWelcome = () => {
         </div>
         <div className="card-body flex-column cb-border-bottom timeCol bg-div">
           <h6 className="text-uppercase event-title">
-            Agenda 2063:<br className="d-none d-sm-block" />The Africa We Want
+            Agenda 2063:<br className="d-none d-sm-block" /> The Africa We Want
           </h6>
           <br /><br />
           <div className="panelist mt-3 d-flex d-sm-block align-items-center">
@@ -146,7 +146,7 @@ const HandshakeWelcome = () => {
         </div>
         <div className="card-body flex-column cb-border-bottom timeCol">
           <h6 className="text-uppercase event-title">
-            African Union Structure:<br className="d-none d-sm-block" />The Organisation
+            African Union Structure:<br className="d-none d-sm-block" /> The Organisation
             <br className="d-none d-sm-block" />
           </h6>
           <div className="text-white cb-fs-16 invisible">
@@ -295,7 +295,7 @@ const HandshakeWelcome = () => {
         </div>
         <div className="card-body flex-column cb-border-bottom timeCol bg-div">
           <h6 className="text-uppercase event-title">
-          Pathways, Opportunities<br className="d-none d-sm-block" />and Requirements
+          Pathways, Opportunities<br className="d-none d-sm-block" /> and Requirements
           </h6>
           <div className="text-white cb-fs-16 invisible">
             Spotlighting Noteworthy <br className="d-none d-sm-block" /> Models
