@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import "./Navbar.css";
 const Logo = require("../../images/Handshake-Logo-White.png");
 const LogoBlue = require("../../images/Handshake-Logo-Blue.png");
+const graduatepro = require("../../images/gradpro_black.png");
 const MobileLogo = require("../../images/Handshake-Logo-Blue.png");
 const african_union_normal = require("../../images/african_union_logo.png")
 const african_union_white = require("../../images/african_union_white.png")
@@ -15,7 +16,7 @@ const NavbarStatic = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
     return (
       <nav
         class="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#5ac5c9" }}
+        style={{ backgroundColor: "#f7b021" }}
       >
         <div class="container-fluid">
           <button
@@ -95,7 +96,7 @@ const NavbarStatic = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
             alt="logo"
           />
         </Link>
-        <ul className="Navigator" style={{ marginTop: "15px" }}>
+        <ul className="Navigator" style={{ marginTop: "1rem" }}>
           <li>
             <Link to="/#about">About</Link>
           </li>
@@ -111,15 +112,15 @@ const NavbarStatic = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
           <li>
             <Link to="/contacts">Contact</Link>
           </li>
+        </ul>
           <div className="social">
           <img
             style={{ width: "100px" }}
-            src={LogoBlue}
+            src={graduatepro}
             className="img-fluid"
             alt="logo"
           />
           </div>
-        </ul>
       </nav>
     );
   }

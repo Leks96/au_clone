@@ -7,7 +7,7 @@ import monique from '../../images/speakers1/Dr-Monique.jpg'
 import fathallah from '../../images/speakers1/Fathallah.jpg'
 import nadege from '../../images/speakers1/Ms-Nadege.jpg'
 //import rico from '../../images/speakers1'
-import botho from '../../images/speakers1/Ms-Botho.jpg'
+import botho from '../../images/heroSpeakers/imgg.jpg'
 import sandile from '../../images/speakers1/Mr-Sandile.jpg'
 //import hamza from '../../images/speakers1'
 //import leslye from '../../images/speakers1/'
@@ -371,6 +371,11 @@ const FeaturedSpeaker = () => {
     const cardCarousel = document.querySelector(".cards-carousel");
     const dotIndicator = document.querySelector(".dot-indicator");
 
+    if (!cardCarousel || !dotIndicator) {
+      // Exit early if either element is not found
+      return;
+    }
+
     // Clear existing dot indicators
     dotIndicator.innerHTML = "";
 
@@ -381,19 +386,38 @@ const FeaturedSpeaker = () => {
     }
 
     const handleScroll = () => {
-      const cardWidth = cardCarousel.offsetWidth;
+      const cardWidth = cardCarousel.children[0].offsetWidth;
       const scrollLeft = cardCarousel.scrollLeft;
       const activeIndex = Math.round(scrollLeft / cardWidth);
       const dots = dotIndicator.querySelectorAll("li");
 
-      dots.forEach((dot) => dot.classList.remove("active"));
-      dots[activeIndex].classList.add("active");
+      dots.forEach((dot, index) => {
+        if (index === activeIndex) {
+          dot.classList.add("active");
+        } else {
+          dot.classList.remove("active");
+        }
+      });
     };
+
+    const scrollInterval = setInterval(() => {
+      const cardWidth = cardCarousel.children[0].offsetWidth;
+      const maxScrollLeft = cardCarousel.scrollWidth - cardCarousel.clientWidth;
+      const nextScrollLeft = cardCarousel.scrollLeft + cardWidth;
+
+      // If we've reached the end, reset to the beginning
+      if (Math.ceil(nextScrollLeft) >= maxScrollLeft) {
+        cardCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        cardCarousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    }, 900);
 
     cardCarousel.addEventListener("scroll", handleScroll);
 
     return () => {
       cardCarousel.removeEventListener("scroll", handleScroll);
+      clearInterval(scrollInterval);
     };
   }, []);
 

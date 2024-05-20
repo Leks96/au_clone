@@ -15,7 +15,7 @@ const Navbar = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
     return (
       <nav
         class="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#5ac5c9" }}
+        style={{ backgroundColor: "#f7b021" }}
       >
         <div class="container-fluid">
           <button
@@ -32,7 +32,7 @@ const Navbar = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
           <Link class="navbar-brand mr-auto" to="/" className="title">
             <img
               style={{ width: "120px" }}
-              src={isMobile ? african_union_normal : isScrolled ? african_union_normal : african_union_white}
+              src={isMobile ? african_union_normal : isScrolled ? african_union_normal : african_union_normal}
               className="img-fluid"
               alt="logo"
             />
@@ -66,10 +66,10 @@ const Navbar = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
                 </Link>
               </li>
             </ul>
-            <div className="nav-link social p-0">
+            <div className="nav-link social p-0 d-none d-lg-block">
               <img
                 style={{ width: "120px" }}
-                src={isMobile ? graduatepro : isScrolled ? graduatepro_black : graduatepro}
+                src={isMobile ? graduatepro_black : isScrolled ? graduatepro_black : graduatepro_black}
                 className="img-fluid"
                 alt="logo"
               />
@@ -94,7 +94,7 @@ const Navbar = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
         <Link to="/" className="title p-0">
           <img
             style={{ width: "120px" }}
-            src={isScrolled ? african_union_normal : african_union_white}
+            src={isScrolled ? african_union_normal : african_union_normal}
             className="img-fluid"
             alt="logo"
           />
@@ -117,10 +117,10 @@ const Navbar = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
             <Link to="/contacts">Contact</Link>
           </li>
         </ul>
-          <div className="navbar-brand mr-auto">
+          <div className="navbar-brand mr-auto d-none d-lg-block">
             <img
               style={{ width: "120px" }}
-              src={isScrolled ? graduatepro_black : graduatepro}
+              src={isScrolled ? graduatepro_black : graduatepro_black}
               className="img-fluid"
               alt="logo"
             />

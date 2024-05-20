@@ -16,7 +16,7 @@ const WhyAttend = () => {
             </span>
             <br />
             <span className="text-center text-uppercase text-nlco-secondary">
-              Why Attend
+              Why Attend?
             </span>
           </div>
         </div>

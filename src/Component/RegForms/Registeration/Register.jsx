@@ -35,6 +35,7 @@ export default function Register() {
     experience: "",
     whatYouDo: "",
     role: "",
+    language: "",
     notifyAll: true,
     //notifyOne: true,
     //notifyHandshake: false,
@@ -45,7 +46,7 @@ export default function Register() {
   const [errorText, setErrorText] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
-  const [registeredName, setRegisteredName] = useState("");
+  const [registeredName, setRegisteredName] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
   const countries = useMemo(() => countryList().getData(), []);
@@ -194,6 +195,10 @@ export default function Register() {
   // Handling the form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setErrorText("");
+
+    console.log("Form Data:", formData);
+    console.log("Phone:", phone);
 
     if (Object.values(formData).some((value) => value === "")) {
       setErrorText("Please enter all the fields marked *");
@@ -201,8 +206,12 @@ export default function Register() {
       return; // Exit early if any field is empty
     }
 
-    console.log("Form Data:", formData);
-    //console.log("Phone:", phone);
+    const [isValid] = validatePhoneNumber(phone);
+
+    if (phone === "" || phone === undefined || !isValid) {
+      setErrorText("Phone number is required and should be valid");
+      return;
+    }
 
     setIsLoading(true);
 
@@ -223,6 +232,7 @@ export default function Register() {
     fd.append("what_do_you_do", formData.whatYouDo);
     fd.append("role", formData.role);
     fd.append("notifyAll", formData.notifyAll);
+    fd.append("language", formData.language);
     fd.append("nlco_newsletter", true);
     fd.append("handshake_newsletter", true);
 
@@ -239,7 +249,7 @@ export default function Register() {
       console.log(res);
       setSubmitted(true);
       setErrorText("");
-      setRegisteredName(formData.fullName);
+      setRegisteredName(formData.firstName);
       setFormData((prevData) => ({
         firstName: "",
         lastName: "",
@@ -276,16 +286,14 @@ export default function Register() {
                 height={200}
               />
             </div>
-            <div className="col-12">
-              <h1>
-                Hello {registeredName}, your registration for the handshake
-                event was successful.
-              </h1>
-            </div>
             <div className="col-12 text-center">
+              <h1>
+                Hello {registeredName}, your registration for the African Union
+                Virtual Career Fair Masterclass was successful. We will send you
+                joining details closer to the event.
+              </h1>
               <p className={styles.partSuccesMess}>
-                We look forward to seeing you at the event virtually. You’ll be
-                notified 30 minutes before the event starts.
+                We look forward to receiving you.
               </p>
             </div>
             <div className="col-12">
@@ -315,16 +323,6 @@ export default function Register() {
         successMessage()
       ) : (
         <div>
-          <div className="col-md-2 text-end">
-            <Link to={"/"} style={{ textDecoration: "none" }}>
-              <div className={`pt-4 ${styles.backBtn}`}>
-                <button>
-                  <BackArrow />
-                  Back
-                </button>
-              </div>
-            </Link>
-          </div>
           <div className={`${styles.form} mt-2 mb-2`}>
             <div>
               <h1 id={styles.reg}>
@@ -388,6 +386,9 @@ export default function Register() {
                         phoneError && styles.errorInput
                       }`}
                     />
+                    {phoneError && (
+                      <p className="text-danger small">{phoneError}</p>
+                    )}
                   </div>
                   <div className={`col-md-6 pb-3`}>
                     <CustomSelect
@@ -479,17 +480,21 @@ export default function Register() {
                       word="How many years of work experience do you have? *"
                     />
                   </div>
+                  <div className={`col-md-12 pb-3`}>
+                    <input
+                      placeholder="What is your preferred language for communication *"
+                      onChange={handleFormChange}
+                      id={styles.regIn}
+                      value={formData.language}
+                      name="language"
+                      type="text"
+                    />
+                  </div>
                 </div>
               </div>
 
               <br />
               <br />
-
-              {/* <label htmlFor="checkox" className={`pb-3`}>
-                <p className={`text-start`} id={styles.regP}>
-                  Would you like to be notified about other events?
-                </p>
-              </label> */}
 
               <div className={`check-container`}>
                 <div className={`row`}>
@@ -504,30 +509,6 @@ export default function Register() {
                       label="Please check the box to give us permission to contact you about the upcoming masterclass and related activities."
                     />
                   </div>
-
-                  {/* <div
-                    className={`mb-3 form-check col-md-6 d-inline-block pb-3`}
-                    id={styles.check}
-                  >
-                    <CustomCheckbox
-                      value={formData.notifyOne}
-                      name={"no"}
-                      onchangeFunc={handleCheckNo}
-                      label="No, I'm good with just this one."
-                    />
-                  </div>
-
-                  <div
-                    className={`mb-3 form-check col-md-12 d-inline-block pb-3`}
-                    id={styles.check}
-                  >
-                    <CustomCheckbox
-                      value={formData.notifyHandshake}
-                      name={"hanshake_newslatter"}
-                      onchangeFunc={handleCheckNewsLatter}
-                      label="Yes, I agree to receiving communications about Handshake and related  activities."
-                    />
-                  </div> */}
                 </div>
               </div>
               {errorText && <p className={styles.error}>{errorText}</p>}

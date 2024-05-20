@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { Tabs, Tab } from "react-bootstrap";
 import "./HandshakeWelcome.css";
-import ronaldo from "../../images/ronaldo.png";
-import ramos from "../../images/ramos.jpg";
-import serene from "../../images/serena.webp";
-import elon from "../../images/elon.jpg";
 import manuella from '../../images/speakers1/Ms-Manuella.jpg'
 import william from '../../images/speakers1/Mr-William.jpg'
 import simone from '../../images/speakers1/Ms-Simone.jpg'
@@ -12,6 +8,7 @@ import victor from '../../images/speakers1/Mr-Victor.jpg'
 import nissem from '../../images/speakers1/Ms-Nissem.jpg'
 import sandile from '../../images/speakers1/Mr-Sandile.jpg'
 import aude from '../../images/speakers1/Ms-Aude.jpg'
+import adoum from '../../images/speakers1/Mr-Adoum.jpg'
 import speaker from '../../images/speaker.jpg'
 import speaker1 from '../../images/speaker.jpg'
 import speaker2 from '../../images/speaker.jpg'
@@ -44,7 +41,7 @@ const HandshakeWelcome = () => {
 
   const allDaysContent = (
     <div className="container">
-    <div className="col-md-12 justify-content-center hw d-sm-flex text-white-50">
+    <div className="col-md-12 justify-content-center hw d-sm-flex" style={{border: "#1d1e4a"}}>
       
       <div className="firstDiv card text-white-50 text-sm-center">
         <div className="card-body flex-column cb-border-bottom timeCol bg-div">
@@ -176,15 +173,15 @@ const HandshakeWelcome = () => {
             </h6>
             <OverlayTrigger
               trigger={["hover", "focus"]}
-              overlay={popover("")}
+              overlay={popover("Mr. Adoum Gagoloum")}
               key="top"
               placement="top"
             >
-              <Image className="panelist-img me-2" src={speaker3} alt="Image" />
+              <Image className="panelist-img me-2" src={adoum} alt="Image" />
             </OverlayTrigger>
             <OverlayTrigger
               trigger={["hover", "focus"]}
-              overlay={popover("")}
+              overlay={popover("Ms. Rebecca Oloo")}
               key="top"
               placement="top"
             >
@@ -192,11 +189,37 @@ const HandshakeWelcome = () => {
             </OverlayTrigger>
             <OverlayTrigger
               trigger={["hover", "focus"]}
-              overlay={popover("")}
+              overlay={popover("Mr. Ngarhasta Neldjingar")}
               key="top"
               placement="top"
             >
               <img className="panelist-img ms-3" src={speaker5} />
+            </OverlayTrigger>
+          </div>
+          <div className="panelist mt-3 d-flex d-sm-block align-items-center">
+          <OverlayTrigger
+              trigger={["hover", "focus"]}
+              overlay={popover("Ms. Nigest Ensene")}
+              key="top"
+              placement="top"
+            >
+              <img className="panelist-img ms-3" src={speaker5} />
+            </OverlayTrigger>
+            <OverlayTrigger
+              trigger={["hover", "focus"]}
+              overlay={popover("Mr. Rico Bien Aime")}
+              key="top"
+              placement="top"
+            >
+              <img className="panelist-img ms-3" src={speaker5} />
+            </OverlayTrigger>
+            <OverlayTrigger
+              trigger={["hover", "focus"]}
+              overlay={popover("Ms. Seblewongel Goshu")}
+              key="top"
+              placement="top"
+            >
+              <img className="panelist-img ms-3" src={speaker3} />
             </OverlayTrigger>
           </div>
           <div className="moderator mt-4 d-flex d-sm-block align-items-center">

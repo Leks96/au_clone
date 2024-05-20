@@ -20,6 +20,7 @@
   font-weight: 600;
   line-height: 150%; /* 1.6875rem */
   letter-spacing: -0.0225rem;
+  display: block;
 }
 
 .partBtnScss {

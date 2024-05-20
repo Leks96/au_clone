@@ -245,9 +245,9 @@ const Contacts = () => {
                       </p>
                       <h1 className="mb-2">Contacts</h1>
                       <p className={`text-start p-0`}>ask@naomilucas.xyz</p>
-                      <p className={`text-start p-0`}>
+                      {/*<p className={`text-start p-0`}>
                        au.graduatepro.naomilucas.xyz
-                      </p>
+                      </p>*/}
                     </div>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ const Hashtag = () => {
           <span className="dot text-nlco-secondary ms-2">.</span>
         </div>
         <div className="col-lg-12 col-sm-6 text-center mb-3">
-          <span className="tag">#aucareerFair</span>
+          <span className="tag">#aucareerfair</span>
           <span className="dot text-nlco-secondary ms-2">.</span>
         </div>
         <div className="col-lg-12 col-sm-6 text-center mb-3">
