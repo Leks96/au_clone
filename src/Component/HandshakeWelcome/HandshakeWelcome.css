@@ -140,10 +140,10 @@
     margin: 0px 15px;
   }
   .bg-dark-blue {
-    background-color: #1d1e4a;
+    background-color: white;
   }
   .cb-border-bottom {
-    border: 2px solid #101129;
+    border: 2px solid white
   }
   .timeCol {
     height: 350px;

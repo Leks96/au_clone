@@ -33,7 +33,7 @@ export default function Register() {
     qualification: "",
     employmentStatus: "",
     experience: "",
-    whatYouDo: "",
+    //whatYouDo: "",
     role: "",
     language: "",
     notifyAll: true,
@@ -106,6 +106,25 @@ export default function Register() {
       label: "Over 8 years",
       value: "Over 8 years",
     },
+  ];
+
+  const language = [
+    {
+      label: "English",
+      value: "English",
+    },
+    {
+      label: "French",
+      value: "French",
+    },
+    {
+      label: "Portuguese",
+      value: "Portuguese",
+    },
+    {
+      label: "Arabic",
+      value: "Arabic",
+    }
   ];
 
   useEffect(() => {
@@ -229,7 +248,7 @@ export default function Register() {
     fd.append("qualification", formData.qualification);
     fd.append("employmentStatus", formData.employmentStatus);
     fd.append("experience", formData.experience);
-    fd.append("what_do_you_do", formData.whatYouDo);
+    //fd.append("what_do_you_do", formData.whatYouDo);
     fd.append("role", formData.role);
     fd.append("notifyAll", formData.notifyAll);
     fd.append("language", formData.language);
@@ -260,7 +279,7 @@ export default function Register() {
         qualification: "",
         employmentStatus: "",
         experience: "",
-        whatYouDo: "",
+        //whatYouDo: "",
         role: "",
         notifyAll: true,
       }));
@@ -413,7 +432,7 @@ export default function Register() {
                       }}
                       value={formData.countryOfOrigin}
                       name="countryOfOrigin"
-                      word="What country are you from? *"
+                      word="Nationality *"
                     />
                   </div>
                   <div className={`col-md-6 pb-3`}>
@@ -427,7 +446,7 @@ export default function Register() {
                       word="What country do you live in? *"
                     />
                   </div>
-                  <div className={`col-md-6 pb-3`}>
+                  {/*<div className={`col-md-6 pb-3`}>
                     <input
                       placeholder="Where do you work/What do you do? *"
                       onChange={handleFormChange}
@@ -436,7 +455,7 @@ export default function Register() {
                       name="whatYouDo"
                       type="text"
                     />
-                  </div>
+                  </div>*/}
                   <div className={`col-md-6 pb-3`}>
                     <input
                       placeholder="Role? *"
@@ -480,14 +499,15 @@ export default function Register() {
                       word="How many years of work experience do you have? *"
                     />
                   </div>
-                  <div className={`col-md-12 pb-3`}>
-                    <input
-                      placeholder="What is your preferred language for communication *"
-                      onChange={handleFormChange}
-                      id={styles.regIn}
+                  <div className={`col-md-6 pb-3`}>
+                    <CustomSelect
+                      options={language}
+                      onChange={(val) => {
+                        handleCustomSelectChange(val, "language");
+                      }}
                       value={formData.language}
                       name="language"
-                      type="text"
+                      word="Preferred Language *"
                     />
                   </div>
                 </div>

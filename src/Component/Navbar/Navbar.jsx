@@ -15,7 +15,7 @@ const Navbar = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
     return (
       <nav
         class="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#f7b021" }}
+        style={{ backgroundColor: "#5ac5c9" }}
       >
         <div class="container-fluid">
           <button

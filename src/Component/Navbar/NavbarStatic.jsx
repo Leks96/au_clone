@@ -16,7 +16,7 @@ const NavbarStatic = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
     return (
       <nav
         class="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#f7b021" }}
+        style={{ backgroundColor: "#5ac5c9" }}
       >
         <div class="container-fluid">
           <button
@@ -67,10 +67,10 @@ const NavbarStatic = ({ isScrolled, isMobile, toggleMenu, showMenu }) => {
                 </Link>
               </li>
             </ul>
-            <div className="nav-link social">
+            <div className="nav-link social d-none d-lg-block">
               <img
                   style={{ width: "100px" }}
-                  src={isMobile ? MobileLogo : isScrolled ? LogoBlue : Logo}
+                  src={isMobile ? graduatepro : isScrolled ? graduatepro : graduatepro}
                   className="img-fluid"
                   alt="logo"
               />

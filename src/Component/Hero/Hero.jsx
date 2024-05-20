@@ -267,7 +267,7 @@ const Hero = () => {
           <div className="col-md-4 col-6 text-center border-right infoTouch fw-bolder">
             <IoCalendar /> 25 Speakers
           </div>
-          <div className="col-md-4 col-6 text-center infoTouch fw-bolder">
+          <div className="col-md-4 col-12 text-center infoTouch fw-bolder">
             <IoMic /> 7 Sessions
           </div>
         </div>
