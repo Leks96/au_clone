@@ -5,6 +5,7 @@ import ronaldo from "../../images/ronaldo.png";
 import ramos from "../../images/ramos.jpg";
 import serene from "../../images/serena.webp";
 import elon from "../../images/elon.jpg";
+import manuella from '../../images/speakers1/Ms-Manuella.jpg'
 import william from '../../images/speakers1/Mr-William.jpg'
 import simone from '../../images/speakers1/Ms-Simone.jpg'
 import victor from '../../images/speakers1/Mr-Victor.jpg'
@@ -95,7 +96,7 @@ const HandshakeWelcome = () => {
               key="top"
               placement="top"
             >
-              <Image className="panelist-img me-2" src={speaker2} alt="Image" />
+              <Image className="panelist-img me-2" src={manuella} alt="Image" />
             </OverlayTrigger>
             <OverlayTrigger
               trigger={["hover", "focus"]}
